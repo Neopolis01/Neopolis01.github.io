@@ -4,6 +4,10 @@ html {
   background-color: #2C3B3E;
 }
 
+body {
+  margin: 0%;
+}
+
 .header {
   overflow:hidden;
   background-color: #9ED3DA;
@@ -20,20 +24,20 @@ html {
   text-decoration: none;
   width: 15%;
   font-family: "Lobster";
-  font-size: 400%;
+  font-size: 350%;
   padding: 2%;
 }
 
-.header a {
-  float: left;
-  display: block;
-  color: #837059;
+.link a {
+  float:left;
+  display: inline;
+  color: #877E6B;
   text-align: center;
   text-decoration: none;
-  width: 10%;
-  margin: 1%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  margin: 1.5%;
+  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   font-family: "Lobster";
   font-size:250%;
   border-radius: 20%;
@@ -41,7 +45,7 @@ html {
     
 }
 
-.header a:hover {
+.link a:hover {
   background: #ddd;
   color: black;
 }
@@ -59,4 +63,96 @@ html {
   width: 3%;
   height: 3%;
   margin-top: 2.5%;
+}
+
+.grid {
+  margin-top: 300px;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+
+
+.gridItem1, .gridItem3, .where{
+  margin: 2% 5% 2% 5%;
+  background: #A1C5CE;
+  padding: 2%;
+  border-radius: 25px;
+}
+
+.gridItem1 p, .gridItem3 p, .where p{
+  font-size: 200%;
+  display: inline-block;
+}
+
+.gridItem1 h1, .gridItem3 h1, .where h1{
+  font-size: 250%;
+  
+}
+
+.where h2{
+  font-size: 100%;
+  display: inline-block;
+}
+
+.gridItem2 img, .gridItem4 img, .gridItem5 img{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 25px;
+}
+
+.contact {
+  margin: 2% 2% 2% 2%;
+  background: #A1C5CE;
+  padding: 2%;
+  border-radius: 25px;
+}
+
+.contact form{
+  font-size: 150%;
+}
+
+.slideshow {
+  display: inline;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  max-width: 100%;
+}
+
+.slide {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin: auto;
+}
+
+.next {
+  right: 10%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 10%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 80%;
 }
