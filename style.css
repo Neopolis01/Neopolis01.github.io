@@ -46,6 +46,13 @@ body {
     
 }
 
+@media only screen and (orientation : portrait) {
+  .link a {
+    display: block;
+    font-size:150%;
+  }
+}
+
 .link a:hover {
   background: #ddd;
   color: black;
