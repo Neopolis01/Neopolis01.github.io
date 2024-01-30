@@ -96,13 +96,16 @@ body {
 }
 
 .gridItem1 p, .gridItem3 p, .where p{
-  font-size: 200%;
+  font-size: 175%;
+  font-family: 'Ubuntu', sans-serif;
   display: inline-block;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
-.gridItem1 h1, .gridItem3 h1, .where h1{
+.gridItem1 h1, .gridItem3 h1, .where h1, .contact h1{
   font-size: 250%;
-  font-family: Lobster, sans-serif;
+  font-family: 'Lobster Two', sans-serif;
 }
 
 .where h2{
@@ -129,6 +132,8 @@ body {
 
 .contact form{
   font-size: 150%;
+  margin-left: 0.25%;
+  margin-right: 0.25%;
 }
 
 .slideshow {
