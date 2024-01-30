@@ -71,7 +71,7 @@ body {
   grid-template-columns: auto auto;
 }
 
-@media (orientation : portrait) {
+@media screen and (orientation : portrait) {
   margin-top: 300px;
   display: inline-grid;
   grid-template-columns: auto;
