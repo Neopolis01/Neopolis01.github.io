@@ -71,10 +71,12 @@ body {
   grid-template-columns: auto auto;
 }
 
-@media screen and (orientation : portrait) {
-  margin-top: 300px;
-  display: inline-grid;
-  grid-template-columns: auto;
+@media only screen and (orientation : portrait) {
+  .grid {
+    margin-top: 300px;
+    display: inline-grid;
+    grid-template-columns: auto;
+  }
 }
 
 .gridItem1, .gridItem3, .where{
