@@ -71,6 +71,11 @@ body {
   grid-template-columns: auto auto;
 }
 
+@media (max-width : 320px) {
+  margin-top: 300px;
+  display: inline-grid;
+  grid-template-columns: auto;
+}
 
 .gridItem1, .gridItem3, .where{
   margin: 2% 13% 2% 13%;
