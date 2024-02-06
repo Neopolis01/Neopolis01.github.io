@@ -65,7 +65,7 @@ body {
 }
 
 @media only screen and (orientation : landscape) {
-  .stocks {
+  .stock {
     width: 29%;
   }
 }
