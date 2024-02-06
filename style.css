@@ -71,6 +71,7 @@ body {
 }
 
 .stocks {
+  display: block;
   margin: 3%;
 }
 
