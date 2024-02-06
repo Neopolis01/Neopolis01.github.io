@@ -70,6 +70,10 @@ body {
   }
 }
 
+stocks {
+  margin: auto;
+}
+
 .stock {
   display: inline-block;
   margin: auto;
