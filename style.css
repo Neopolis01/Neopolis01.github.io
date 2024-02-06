@@ -48,7 +48,7 @@ body {
 }
 
 .barrier{
-  padding: 40px;
+  padding: 60px;
 }
 
 @media only screen and (orientation : portrait) {
@@ -60,21 +60,22 @@ body {
   .stock {
     display: block;
     margin: 4%;
+    width: 80%;
   }
 }
 
 @media only screen and (orientation : landscape) {
   .stocks {
-    margin: auto;
+    width: 29%;
   }
 }
 
 .stock {
   display: inline-block;
+  margin: auto;
   margin: 2%;
   background: #A1C5CE;
   border-radius: 25px;
-  width: 29%;
   text-align: center;
 }
 
