@@ -73,12 +73,12 @@ body {
 .stocks {
   display: block;
   margin: auto;
-  max-width: 97%
+  max-width: 98%
 }
 
 .stock {
   display: inline-block;
-  margin: 3%;
+  margin: 2%;
   background: #A1C5CE;
   border-radius: 25px;
   text-align: center;
