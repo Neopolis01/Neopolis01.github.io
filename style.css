@@ -44,7 +44,11 @@ body {
   font-size:250%;
   border-radius: 20%;
   background: #A1C5CE;
-    
+
+}
+
+.barrier{
+  padding: 40px;
 }
 
 @media only screen and (orientation : portrait) {
@@ -52,6 +56,43 @@ body {
     display: block;
     font-size:150%;
   }
+  
+  .stock {
+    display: block;
+    margin: 4%;
+  }
+}
+
+@media only screen and (orientation : landscape) {
+  .stocks {
+    margin: auto;
+  }
+}
+
+.stock {
+  display: inline-block;
+  margin: 2%;
+  background: #A1C5CE;
+  border-radius: 25px;
+  width: 29%;
+  text-align: center;
+}
+
+.stock p{
+  font-size: 175%;
+  font-family: 'Ubuntu', sans-serif;
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.stock img{
+  margin: auto;
+  margin-top: 5%;
+  display: block;
+  border-radius: 25px;
+  height:300px;
+  max-width: 400px%;
 }
 
 .link a:hover {
@@ -75,7 +116,6 @@ body {
 }
 
 .grid {
-  margin-top: 300px;
   display: inline-grid;
   grid-template-columns: auto auto;
 }
