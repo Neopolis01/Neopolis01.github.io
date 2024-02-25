@@ -1,225 +1,170 @@
 html {
   height: 100%;
   width: 100%;
-  background-color: #2C3B3E;
 }
 
 body {
-  margin: 0%;
-  font-family: sans-serif;
-  color: #2C3B3E;
+  margin: 0;
+  font-family: Ubuntu;
+  background-color: #164C4E;
+  color:#164C4E;
 }
 
 .header {
-  overflow:hidden;
-  background-color: #9ED3DA;
-  position: fixed;
-  top:  0;
-  width: 100%;
-}
-
-.header title{
-  float: left;
-  display: block;
-  color: #6F939C;
-  text-align: left;
-  text-decoration: none;
-  width: 15%;
-  font-family: "Lobster";
-  font-size: 350%;
-  padding: 2%;
-}
-
-.link a {
-  float:left;
-  display: inline;
-  color: #877E6B;
+  background-image: url("Header.jpg");
+  background-repeat: no-repeat;
+  background-size: 1980px 430px;
+  background-position: center;
+  background-color: #164C4E;
   text-align: center;
-  text-decoration: none;
-  margin: 1.5%;
-  padding: 1%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  font-family: "Lobster";
-  font-size:250%;
-  border-radius: 20%;
-  background: #A1C5CE;
-
+  color: #164C4E;
+  margin: 0;
+  padding: 15px;
+  min-height: 400px;
 }
 
-.barrier{
-  padding: 60px;
+.header h4{
+  font-size: 30px;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #F2FFF1;
 }
 
-@media only screen and (orientation : portrait) {
-  .link a {
-    display: block;
-    font-size:150%;
-  }
-  
-  .stock {
-    display: block;
-    margin: 4%;
-    width: 80%;
-  }
+.header h1{
+  font-size: 70px;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: #F2FFF1;
 }
 
-@media only screen and (orientation : landscape) {
-  .stock {
-    width: 29%;
-  }
-}
-
-.stocks {
-  display: block;
+.buybutton {
   margin: auto;
-  max-width: 98%
-}
-
-.stock {
-  display: inline-block;
-  margin: 2%;
-  background: #A1C5CE;
-  border-radius: 25px;
-  text-align: center;
-}
-
-.stock p{
-  font-size: 175%;
-  font-family: 'Ubuntu', sans-serif;
-  display: inline-block;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.stock img{
-  margin: auto;
-  margin-top: 5%;
-  display: block;
-  border-radius: 25px;
-  height:300px;
-  max-width: 400px%;
-}
-
-.link a:hover {
-  background: #ddd;
-  color: black;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #F2FFF1;
+  color: #164C4E;
 }
 
 .header img{
-  width: 8.5%;
-  height: 8.5%;
-  float: right;
-  padding: 0%;
+  width: 30px;
 }
 
-.header .links img{
-  display: block;
-  float: right;
-  width: 3%;
-  height: 3%;
-  margin-top: 2.5%;
+.buybutton :hover{
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: #164C4E;
+  color: white;
 }
 
-.grid {
-  display: inline-grid;
-  grid-template-columns: auto auto;
-}
-
-@media only screen and (orientation : portrait) {
-  .grid {
-    margin-top: 300px;
+@media only screen and (orientation : landscape) {
+  .products{
     display: inline-grid;
-    grid-template-columns: auto;
+    grid-template-areas: "Small Medium Large";
+    width: 100%;
+    justify-content: center;
+  }
+  .productType {
+    margin: auto;
+    width: 500px;
+  }
+  .productType.Small {
+    grid-area: Small;
+  }
+  .productType.Medium {
+    grid-area: Medium;
+  }
+  .productType.Large {
+    grid-area: Large;
+  }
+
+  .info {
+    display: inline-grid;
+    grid-template-areas: 
+      "Who Img1"
+      "Img2 Where";
+    column-gap: 50px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .infoText {
+    width: 705px;
+    height: 450px;
+  }
+
+  .infoText p{
+    font-size: 30px;
+  }
+  
+  .infoimg{
+    width: 705px;
+    height: 450px;
+  }
+
+  .infoText.what {
+    grid-area: "Who";
+  }
+  .infoimg.display1 {
+    grid-area: "Img1";
+  }
+  .infoText.what {
+    grid-area: "Where";
+  }
+  .infoimg.display1 {
+    grid-area: "Img2";
   }
 }
 
-.gridItem1, .gridItem3, .where{
-  margin: 2% 13% 2% 13%;
-  background: #A1C5CE;
-  padding: 2%;
-  border-radius: 25px;
+@media only screen and (orientation : portrait) {
+  .productType img{
+    width: 65%;
+  }
 }
 
-.gridItem1 p, .gridItem3 p, .where p{
-  font-size: 175%;
-  font-family: 'Ubuntu', sans-serif;
-  display: inline-block;
-  margin-left: 2%;
-  margin-right: 2%;
+.productType{
+  margin: 20px;
+  background-color: #F2FFF1;
+  border-top: 10px;
+  text-align: center;
+  padding: 5px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #113A3C;
+  color: #164C4E;
 }
 
-.gridItem1 h1, .gridItem3 h1, .where h1, .contact h1{
-  font-size: 250%;
-  font-family: 'Lobster Two', sans-serif;
-}
-
-.where h2{
-  font-size: 100%;
-  display: inline-block;
-}
-
-.gridItem2 img, .gridItem4 img, .gridItem5 img{
-  margin-top: 2%;
-  margin-bottom: 2%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 25px;
-  max-width: 70%;
-}
-
-.contact {
-  margin: 2% 2% 2% 2%;
-  background: #A1C5CE;
-  padding: 2%;
-  border-radius: 25px;
-}
-
-.contact form{
-  font-size: 150%;
-  margin-left: 0.25%;
-  margin-right: 0.25%;
-}
-
-.slideshow {
-  display: inline;
-  margin-bottom: 2%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
-  max-width: 100%;
-}
-
-.slide {
-  display: none;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.productType img{
+  size: 370px 490px;
   margin: auto;
+  border-style: solid;
+  border-color: #164C4E;
 }
 
-.next {
-  right: 10%;
-  border-radius: 3px 0 0 3px;
+
+
+.infoText {
+  margin: 20px;
+    background-color: #F2FFF1;
+    border-top: 10px;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #113A3C;
+    color: #164C4E;
+  font-size: 20px;
 }
 
-.prev {
-  left: 10%;
+.infoimg{
+  display: block;
+  margin: auto;
+  border-style: solid;
+  border-color: #113A3C;
+  border-width: 3px;
+  width: 90%;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  border-radius: 80%;
+.infoText.where {
+  height: auto;
+  margin-bottom: 50px;
 }
