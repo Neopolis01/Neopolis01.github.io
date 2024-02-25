@@ -1,0 +1,170 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Ubuntu;
+  background-color: #164C4E;
+  color:#164C4E;
+}
+
+.header {
+  background-image: url("Header.jpg");
+  background-repeat: no-repeat;
+  background-size: 1980px 430px;
+  background-position: center;
+  background-color: #164C4E;
+  text-align: center;
+  color: #164C4E;
+  margin: 0;
+  padding: 15px;
+  min-height: 400px;
+}
+
+.header h4{
+  font-size: 30px;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #F2FFF1;
+}
+
+.header h1{
+  font-size: 70px;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: #F2FFF1;
+}
+
+.buybutton {
+  margin: auto;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #F2FFF1;
+  color: #164C4E;
+}
+
+.header img{
+  width: 30px;
+}
+
+.buybutton :hover{
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: #164C4E;
+  color: white;
+}
+
+@media only screen and (orientation : landscape) {
+  .products{
+    display: inline-grid;
+    grid-template-areas: "Small Medium Large";
+    width: 100%;
+    justify-content: center;
+  }
+  .productType {
+    margin: auto;
+    width: 500px;
+  }
+  .productType.Small {
+    grid-area: Small;
+  }
+  .productType.Medium {
+    grid-area: Medium;
+  }
+  .productType.Large {
+    grid-area: Large;
+  }
+
+  .info {
+    display: inline-grid;
+    grid-template-areas: 
+      "Who Img1"
+      "Img2 Where";
+    column-gap: 50px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .infoText {
+    width: 705px;
+    height: 450px;
+  }
+
+  .infoText p{
+    font-size: 30px;
+  }
+  
+  .infoimg{
+    width: 705px;
+    height: 450px;
+  }
+
+  .infoText.what {
+    grid-area: "Who";
+  }
+  .infoimg.display1 {
+    grid-area: "Img1";
+  }
+  .infoText.what {
+    grid-area: "Where";
+  }
+  .infoimg.display1 {
+    grid-area: "Img2";
+  }
+}
+
+@media only screen and (orientation : portrait) {
+  .productType img{
+    width: 65%;
+  }
+}
+
+.productType{
+  margin: 20px;
+  background-color: #F2FFF1;
+  border-top: 10px;
+  text-align: center;
+  padding: 5px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #113A3C;
+  color: #164C4E;
+}
+
+.productType img{
+  size: 370px 490px;
+  margin: auto;
+  border-style: solid;
+  border-color: #164C4E;
+}
+
+
+
+.infoText {
+  margin: 20px;
+    background-color: #F2FFF1;
+    border-top: 10px;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #113A3C;
+    color: #164C4E;
+  font-size: 20px;
+}
+
+.infoimg{
+  display: block;
+  margin: auto;
+  border-style: solid;
+  border-color: #113A3C;
+  border-width: 3px;
+  width: 90%;
+}
+
+.infoText.where {
+  height: auto;
+  margin-bottom: 50px;
+}
